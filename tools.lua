@@ -53,7 +53,7 @@ local function print_table(tab, depth, key)
         if value_type == "string" then
             print(tab_prefix .. '"' .. value .. '"')
         elseif value_type == "number" or value_type == "boolean" then
-            print(tab_prefix .. value)
+            print(tab_prefix .. tostring(value))
         elseif value_type == "nil" then
             print(tab_prefix .. "null")
         elseif value_type == "function" then
